@@ -19,7 +19,7 @@ class BearTest < MiniTest::Test
   end
 
   def test_type
-    assert_equal("Yogi", @bear.type)
+    assert_equal("Grizzly", @bear.type)
   end
 
   def test_stomach
