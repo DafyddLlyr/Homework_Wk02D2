@@ -9,8 +9,10 @@ class Bear
   end
 
   def eat_fish(river)
-    fish = river.remove
-    @stomach.push(fish)
+    if river.fish_count != 0
+      fish = river.remove
+      @stomach.push(fish)
+    end
   end
 
   def food_count
