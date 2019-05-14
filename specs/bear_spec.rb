@@ -7,7 +7,7 @@ require_relative("../fish")
 class BearTest < MiniTest::Test
 
   def setup
-    @bear = Bear.new("Yogi")
+    @bear = Bear.new("Yogi", "Grizzly")
     @fish_1 = Fish.new("Dave")
     @fish_2 = Fish.new("Bob")
     @fish_3 = Fish.new("Jim")
@@ -16,6 +16,10 @@ class BearTest < MiniTest::Test
 
   def test_name
     assert_equal("Yogi", @bear.name)
+  end
+
+  def test_type
+    assert_equal("Yogi", @bear.type)
   end
 
   def test_stomach
